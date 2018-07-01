@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Currency Converter</h2>
+        <p class="lead">Welcome to our Currency Converter Website. A free currency calculator to convert between most of
+            the global currencies using live or offline exchange rates.</p>
+    </div>
+
+<div id="onlineMessage"></div>
+
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Conversion History</span>
+                <span class="badge badge-secondary badge-pill" id="conversionHistoryCounter">0</span>
+            </h4>
+            <ul class="list-group mb-3" id="conversionHistory">
+            </ul>
+        </div>
+        <div class="col-md-8 order-md-1">
+            <p class="mb-3">To get started, type in a value in any of the boxes, and select any currency to convert to. <br/>Conversion is realtime!</p>
+            <h6 class="text-secondary" id="sumTextFrom"></h6>
+            <h5 id="sumTextTo"></h5>
+            <br/>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="currencySymbolFrom"></span>
+                            </div>
+                            <input type="text" class="form-control" id="currencyInputFrom">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <select class="custom-select d-block w-100" id="countryListFrom">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="currencySymbolTo"></span>
+                            </div>
+                            <input type="text" class="form-control" id="currencyInputTo">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <select class="custom-select d-block w-100" id="countryListTo">
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="jumbotron">
+                <p class="lead font-weight-bold">Features</p>
+                <p>Real time conversion. Currency conversion is done automatically as you type</p>
+                <hr class="my-4">
+                <p>Online/Offline Detection. When offline, app still works and loads all countries that you have previously requested for. When back online, app reverts to online version.</p>
+                <hr class="my-4">
+                <p>Silent updating of currencies in the background. Update function is run in service worker script.</p>
+                <hr class="my-4">
+                <p>Automatic conversion when new country is selected from dropdown.</p>
+                <hr class="my-4">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">With Love - Handel CE.</p>
+    </footer>
+</div>
+
+<script type="application/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+<script type="application/javascript" src="js/bootstrap.min.js"></script>
+<script type="application/javascript" src="js/idb.js"></script>
+<script type="application/javascript" src="js/app.js"></script>
+<script type="application/javascript" src="js/main.js"></script>
+<script type="application/javascript" src="service-worker.js"></script>
+</body>
+</html>
