@@ -4,7 +4,7 @@ A free currency calculator to convert between most of the global currencies usin
 
 ## Getting Started
 
-[Click Here](http://www.dropwizard.io/1.0.2/docs/) to start using the converter to convert currencies 
+[Click Here](https://handelce.github.io/my-currency-converter/) to start using the converter to convert currencies 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
